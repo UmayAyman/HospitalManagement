@@ -1,0 +1,40 @@
+.Booking {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0.5rem 1rem;
+    padding: 0.5rem;
+    width: 10rem;
+    margin-left: 1050px;
+    position: relative;
+    margin-top: -170px;
+}
+
+.Booking h3 {
+    color: grey;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    font-weight: lighter;
+    margin-bottom: 7px;
+}
+
+.Booking b {
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    margin-top: 5px;
+}
+
+.Booking span {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    right: 20px;
+    margin-top: -38px;
+    font-family: Arial, sans-serif;
+    color: green;
+    font-size: 12px;
+    font-weight: bold;
+}

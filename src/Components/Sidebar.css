@@ -1,0 +1,89 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    margin-bottom: auto;
+}
+
+.sidebar {
+    width: 180px;
+    height: 1150px;
+    background-color: white;
+    position: absolute;
+    top: 76px;
+    left: 0;
+    box-sizing: border-box;
+    padding-top: 13px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    color: grey;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-item li,
+.list2 li,
+.list3 li {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.menu-item li:hover,
+.list2 li:hover,
+.list3 li:hover {
+    background-color: #ddd;
+}
+
+.menu-item li.active {
+    background-color: #e5f9f7;
+    color: #34a99f;
+    border-radius: 50px;
+    width: 120px;
+}
+
+.menu-item li svg,
+.list2 li svg,
+.list3 li svg {
+    margin-right: 10px;
+}
+
+.list2 span {
+    color: grey;
+    font-family: Arial, sans-serif;
+}
+
+.other-departments {
+    margin-top: 23px;
+    padding-left: 1px;
+    font-size: 20px;
+}
+
+.other-departments small {
+    color: black;
+    font-family: Arial, sans-serif;
+    margin-bottom: 15px;
+    font-size: 13px;
+    padding-left: 10px;
+    display: block;
+}
+
+.sidebar .toggle-btn {
+    background: #3b9e8d;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.sidebar .toggle-btn:focus {
+    outline: none;
+}
+
+.list3 {
+    margin-top: 60px;
+    margin-bottom: 20px;
+}

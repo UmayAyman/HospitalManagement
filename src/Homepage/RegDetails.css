@@ -1,0 +1,798 @@
+.General-Info {
+  background-color: rgb(244, 244, 237);
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  width: 250px;
+  padding: 20px;
+  margin: auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin-top: 15px;
+  margin-right: 950px;
+}
+
+h3 {
+  color: rgb(72, 197, 132);
+  margin-bottom: 20px;
+  margin-top: -3px;
+  font-size: 15px;
+}
+
+.input {
+  display: flex;
+  font-size: 10px;
+  flex-direction: column;
+  margin-bottom: 15px;
+  width: 230px;
+  font-weight: bold;
+  color: rgb(53, 51, 51);
+}
+
+label {
+  font-size: 11px;
+  color: rgb(53, 51, 51);
+  margin-bottom: 5px;
+}
+
+input,
+select {
+  padding: 8px;
+  font-size: 11px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  color: grey;
+}
+
+input:focus,
+select:focus {
+  border-color: rgb(106, 197, 150);
+  outline: none;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+.row .input.half {
+  flex: 1;
+}
+
+button {
+  width: 320%;
+  font-size: 10px;
+}
+
+button:hover {
+  background-color: none;
+}
+
+.Main-Container {
+  padding: 20px;
+}
+
+.Tabs {
+  display: inline-flex;
+  width: 100%;
+  margin-top: 62px;
+  border: none;
+  cursor: pointer;
+  border-bottom: 1px solid rgb(169, 168, 168);
+}
+
+.Tab-Button {
+  padding: 10px 0px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  color: grey;
+  font-weight: bold;
+}
+
+.Tab-Button.active {
+  font-weight: bold;
+  display: inline-block;
+  border-bottom: 3px solid rgb(72, 197, 132);
+  color: black;
+  margin-bottom: -2px;
+}
+
+.Tab-Content {
+  margin-top: 10px;
+}
+
+.Tab-Button.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 0.5px;
+}
+
+.Patient-Information {
+  background-color: rgb(244, 244, 237);
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  width: 480px;
+  padding: 20px;
+  margin: auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin-top: -395px;
+  margin-right: 410px;
+}
+
+.Pat-Input {
+  display: flex;
+  font-size: 10px;
+  flex-direction: column;
+  margin-bottom: 13px;
+  width: 230px;
+  font-weight: bold;
+  color: grey;
+}
+
+.Patient-Information label {
+  font-size: 11px;
+}
+
+.Pat-Input:not(:first-child) {
+  display: inline-flex;
+  margin-right: 10px;
+}
+
+.Pat-Input select,
+.Pat-Input input {
+  width: 100%;
+}
+
+.Contact-Details {
+  background-color: rgb(244, 244, 237);
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  width: 788px;
+  padding: 20px;
+  margin: auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin-top: 15px;
+  margin-left: -2px;
+}
+
+.Contact-Details .row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.Contact-Details .input.half {
+  display: flex;
+  flex-direction: column;
+  width: 2%;
+}
+
+.whatsapp-checkbox {
+  display: flex;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  margin-top: -20px;
+}
+
+.whatsapp-checkbox input {
+  display: none;
+}
+
+.whatsapp-checkbox label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  color: rgb(72, 197, 132);
+}
+
+.whatsapp-checkbox label .checkmark {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  border: 2px solid rgb(72, 197, 132);
+  border-radius: 3px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -2px;
+  margin-left: 5px;
+}
+
+.whatsapp-checkbox input:checked + label .checkmark {
+  background-color: rgb(72, 197, 132);
+}
+
+.whatsapp-checkbox input:checked + label .checkmark::before {
+  content: '\2713';
+  font-size: 10px;
+  color: white;
+}
+
+.marvin-card {
+  width: 300px;
+  background-color: rgb(244, 244, 237);
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  margin-top: -742px;
+  margin-left: 868px;
+}
+
+.marvin-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.marvin-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.marvin-name {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.marvin-id {
+  font-size: 14px;
+  color: black;
+  margin: 5px 0 0;
+}
+
+.marvin-details {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  border-top: 1px solid rgb(191, 189, 189);
+  font-size: 14px;
+}
+
+.marvin-details span {
+  text-align: center;
+  margin-top: 10px;
+  flex: 1;
+  position: relative;
+}
+
+.marvin-details span:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 100%;
+  background-color: rgb(191, 189, 189);
+}
+
+.marvin-register-button {
+  background-color: rgb(72, 197, 132);
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 90px;
+  display: block;
+  margin: 10px auto 0;
+}
+
+.marvin-register-button:hover {
+  background-color: #67a580;
+}
+
+.Demographic-Details {
+  background-color: rgb(244, 244, 237);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  font-family: Arial, sans-serif;
+  margin-top: 15px;
+  margin-left: 868px;
+  border-radius: 8px;
+  width: 320px;
+  height: auto;
+  padding: 10px;
+}
+
+.ID-checkbox {
+  display: flex;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  margin-top: -20px;
+  gap: 10px;
+}
+
+.ID-checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.ID-checkbox .checkmark {
+  width: 15px;
+  height: 15px;
+  background-color: grey;
+  border-radius: 4px;
+  display: inline-block;
+  position: relative;
+  margin-right: 10px;
+  margin-bottom: -3px;
+}
+
+.ID-checkbox input[type="checkbox"]:checked + label .checkmark {
+  background-color: rgb(72, 197, 132);
+}
+
+.ID-checkbox input[type="checkbox"]:checked + label .checkmark::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 3px;
+  width: 3px;
+  height: 6px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.ID-checkbox input[type="checkbox"]:checked + label {
+  color: rgb(72, 197, 132);
+  font-weight: bold;
+}
+
+.ID-checkbox label {
+  transition: color 0.3s ease;
+  margin-left: 10px;
+}
+
+.Consultation-Details {
+  background-color: rgb(244, 244, 237);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  margin-top: 15px;
+  margin-left: 868px;
+  border-radius: 8px;
+  width: 300px;
+  height: auto;
+  margin-bottom: 100px;
+}
+
+.Consultation-Details select {
+  font-size: 11px;
+  margin-left: -1px;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  font-family: Arial, sans-serif;
+}
+
+.Con-Det label {
+  font-size: 11px;
+  margin-left: 1px;
+  color: rgb(53, 51, 51);
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+
+.Patients-List {
+  background-color: rgb(244, 244, 237);
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  max-width: 100%;
+  padding: 15px;
+  margin: auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin-top: 15px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.Pat-List {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 1px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  width: 290px;
+}
+
+.Pat-List label {
+  width: 120px;
+  text-align: right;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.Pat-List input {
+  flex-grow: 1;
+  width: 200px;
+  padding: 5px;
+  margin-right: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  background-color: #fff;
+  padding: 10px;
+  list-style: none;
+}
+
+.dropdown-menu ul {
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown select {
+  display: none;
+}
+
+.dropdown-menu li {
+  padding: 5px 0;
+}
+
+.Pat-Table {
+  width: 100%;
+  color: grey;
+  background-color: white;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-spacing: 0;
+  border-collapse: separate;
+  margin-top: 20px;
+}
+
+.Pat-Table th, .Pat-Table td {
+  padding: 12px;
+  text-align: center;
+  gap: 20px;
+}
+
+.Pat-Table th {
+  background-color: #dae2e9;
+  font-weight: bold;
+  font-size: 11px;
+  padding-bottom: 20px;
+}
+
+.Pat-Table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.Pat-Table td {
+  border-bottom: 0.25px solid rgb(217, 217, 217);
+  padding-bottom: 25px;
+  padding-top: 25px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.Pat-Table tr:last-child td {
+  border-bottom: none;
+}
+
+.Pat-Table td:first-child {
+  border-top-left-radius: 15px;
+}
+
+.Pat-Table td:last-child {
+  border-top-right-radius: 15px;
+}
+
+.Pat-Table tr:last-child td:first-child {
+  border-bottom-left-radius: 15px;
+}
+
+.Pat-Table tr:last-child td:last-child {
+  border-bottom-right-radius: 15px;
+}
+
+.Find-Details {
+  background-color: rgb(244, 244, 237);
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  padding: 15px;
+  width: 72.5%;
+  margin: auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: center;
+}
+
+.Find-Details h4 {
+  margin-top: 0;
+  color: rgb(84, 83, 83);
+  padding: 10px;
+  font-size: 20px;
+  text-align: left;
+}
+
+.Find-Details b{
+  display: inline-flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.input-value {
+  margin-top: -30px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  display: inline-flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.Marvin-Card {
+  width: 250px;
+  background-color: rgb(244, 244, 237);
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  margin-left: 940px;
+  margin-top: -105px;
+}
+
+.Marvin-Header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.Marvin-Image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.Marvin-Name {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.Marvin-id {
+  font-size: 12px;
+  color: black;
+  margin: 5px 0 0;
+}
+
+.Marvin-Details {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  border-top: 1px solid rgb(191, 189, 189);
+  font-size: 12px;
+  text-align: center;
+}
+
+.Marvin-Details span {
+  text-align: center;
+  margin-top: 10px;
+  flex: 1;
+  position: relative;
+}
+
+.Marvin-Details span:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 100%;
+  background-color: rgb(191, 189, 189);
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 7px;
+  margin-bottom: 15px;
+}
+
+.Edit {
+  background-color: #ffffff;
+  color: rgb(72, 197, 132);
+  border: none;
+  justify-content: space-between;
+  border-radius: 5px;
+  padding: 10px 10px;
+  font-size: 11px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100px;
+  display: block;
+  margin: 10px auto 0;
+}
+
+.Edit:hover {
+  background-color: #c9e7d5;
+}
+
+.Add {
+  background-color: rgb(72, 197, 132);
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 10px;
+  font-size: 11px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100px;
+  display: block;
+  margin: 10px auto 0;
+}
+
+.Add:hover {
+  background-color: #30d572;
+}
+
+.information {
+  width: 20%;
+  background-color: rgb(244, 244, 237);
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  margin: auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin-left: -2px;
+  margin-top: -110px;
+}
+
+.info-pat {
+  margin-bottom: 10px;
+}
+
+.info-pat label {
+  font-weight: bold;
+  font-size: 10.5px;
+  color: grey;
+  display: inline-flex;
+  width: 50%;
+  margin-bottom: 12px;
+}
+
+.info-pat small {
+  margin-left: 11px;
+  font-size: 10.5px;
+  font-weight: bold;
+  color: grey;
+  display: inline-flex;
+  width: 45%;
+  text-align: left;
+  word-break: break-word;
+}
+
+.info-gen {
+  width: 246px;
+  background-color: rgb(244, 244, 237);
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  margin: auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin-top: -452px;
+  margin-left: 300px;
+}
+
+.info-gen label {
+  font-weight: bold;
+  font-size: 10.5px;
+  color: grey;
+  display: inline-flex;
+  width: 33%;
+  margin-bottom: 13px;
+}
+
+.info-gen small {
+  margin-left: 65px;
+  font-size: 10.5px;
+  font-weight: bold;
+  color: grey;
+  display: inline-flex;
+  width: 30%;
+  text-align: left;
+  word-break: break-word;
+}
+
+.info-det {
+  width: 246px;
+  background-color: rgb(244, 244, 237);
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  margin: auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin-top: 17px;
+  margin-left: 300px;
+}
+
+.info-det label {
+  font-weight: bold;
+  font-size: 10.5px;
+  color: grey;
+  display: inline-flex;
+  width: 39%;
+  margin-bottom: 12px;
+}
+
+.info-det small {
+  margin-left: 51px;
+  font-size: 10.5px;
+  font-weight: bold;
+  color: grey;
+  display: inline-flex;
+  width: 38%;
+  text-align: left;
+  word-break: break-word;
+}
+
+.Demo-Det {
+  background-color: rgb(244, 244, 237);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  font-family: Arial, sans-serif;
+  margin-top: -447px;
+  margin-left: 600px;
+  border-radius: 8px;
+  width: 305px;
+  height: auto;
+  padding: 10px;
+}
+
+.other-information {
+  width: 20.5%;
+  background-color: rgb(244, 244, 237);
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  margin: auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin-left: 940px;
+  margin-top: -412px;
+}
+
+.other-pat {
+  margin-bottom: 10px;
+}
+
+.other-pat label {
+  font-weight: bold;
+  font-size: 10.5px;
+  color: grey;
+  display: inline-flex;
+  width: 50%;
+  margin-bottom: 17.5px;
+}
+
+.other-pat small {
+  margin-left: 11px;
+  font-size: 10.5px;
+  font-weight: bold;
+  color: grey;
+  display: inline-flex;
+  width: 45%;
+  text-align: left;
+  word-break: break-word;
+}

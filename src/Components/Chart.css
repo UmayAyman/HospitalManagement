@@ -1,0 +1,46 @@
+.chart-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    width: auto;
+    font-family: Arial, sans-serif;
+    margin-left: 485px;
+    margin-top: -552.5px;
+    max-width: 720px;
+    height: 432.5px;
+}
+
+.chart-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+    margin-top: 10px;
+    width: 300px;
+}
+
+.chart-title {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.view-details {
+    color: grey;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: 560px;
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.visit-list {
+    font-family: Arial, sans-serif;
+    color: grey;
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+

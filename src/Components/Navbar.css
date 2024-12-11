@@ -1,0 +1,121 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e56a0;
+    color: white;
+    padding: 5px 10px;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    box-sizing: "border-box";
+    font-family: Arial, sans-serif;
+}
+
+.Healthcare-logo {
+    font-size: 30px;
+}
+
+.Medipuls {
+    font-size: 18px;
+    margin-left: 30px;
+    margin-top: -30px;
+}
+
+.Mdmenu {
+    position: relative;
+    font-size: 20px;
+    margin-right: 2050px;
+    margin-top: 12px;
+}
+
+.icons {
+    display: flex;
+    gap: 15px;
+    font-size: 18px;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -1300px;
+}
+
+.icon {
+    position: relative;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.notification-badge {
+    position: absolute;
+    top: 2px;
+    right: -3px;
+    background: red;
+    color: red;
+    font-size: 6px;
+    border-radius: 1000px;
+    padding: 1px 2px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 45px;
+}
+
+.user-info span {
+    font-size: 14px;
+    color: #d3d3d3;
+}
+
+.user-info small {
+    font-size: 14px;
+    color: #d3d3d3;
+    margin-left: 57px;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    background: #416eb8;
+    color: white;
+    font-size: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10%;
+}
+
+.Mdmenu:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.icons .icon:hover, .icons .Countdown:hover, .icons svg:hover {
+    color: #f0f0f0;
+    transform: scale(1.1);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.user-avatar:hover {
+    background: #3a5993;
+    transform: scale(1.1);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.user-info:hover span, .user-info:hover small {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.Mdmenu a,
+.icons a {
+    text-decoration: none;
+    color: white;
+}
+
+.Mdmenu a:hover,
+.icons a:hover {
+    color: #f0f0f0;
+}
