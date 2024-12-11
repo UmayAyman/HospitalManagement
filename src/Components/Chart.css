@@ -6,7 +6,7 @@
     width: auto;
     font-family: Arial, sans-serif;
     margin-left: 485px;
-    margin-top: -552.5px;
+    margin-top: -490px;
     max-width: 720px;
     height: 430px;
 }
@@ -14,8 +14,8 @@
 .chart-header {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 35px;
-    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-top: 5px;
     width: 300px;
 }
 

@@ -31,7 +31,7 @@ function App() {
                 </div>
                 <Frontoffice />
                 <Chart />
-                <div className="Booking-Details" style = {{marginTop: '120px'}}>
+                <div className="Booking-Details" style = {{marginTop: '20px'}}>
                   <Booking heading="Hospital Visits" description="8950" percent="+ 22%" />
                   <Booking heading="Appointments" description="3034" percent="+ 22%" />
                   <Booking heading="Online Booking" description="1236" percent="+ 22%" />

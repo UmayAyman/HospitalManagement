@@ -17,8 +17,8 @@ const Chart = () => {
                 fill: false,
                 tension: 0.4,
                 pointBackgroundColor: '#2CA8',
-                pointRadius: 6,
-                pointHoverRadius: 8,
+                pointRadius: 5,
+                pointHoverRadius: 7,
                 pointBorderColor: '#fff',
                 pointBorderWidth: 2,
             },
@@ -46,15 +46,19 @@ const Chart = () => {
                 beginAtZero: true,
                 ticks: {
                     display: false,
+                    stepSize: 1000,
                 },
                 grid: {
                     display: true,
-                    borderDash: [5, 5],
+                    borderDash: [5, 6],
+                    color: '#e0e0e0',
+                    lineWidth: 0.8,
                 },
+                max: 5000,
             },
         },
     };
-
+    
     return (
         <div className="chart-container">
             <div className="chart-header">
@@ -62,7 +66,7 @@ const Chart = () => {
                 <Link to="/Homepage" className="view-details">View Details→</Link>
             </div>
             <small className='visit-list'>Jan 16 - Jan 30 Patient visit chart</small>
-            <Line data={data} options={options} style={{ maxWidth: '500px', height: '300px' }} />
+            <Line data={data} options={options} style={{ maxWidth: '500px', height: 'auto', marginBottom: '200px'}} />
         </div>
     );
 };
