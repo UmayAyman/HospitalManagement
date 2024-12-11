@@ -24,7 +24,7 @@ const Chart = () => {
             },
         ],
     };
-
+    
     const options = {
         plugins: {
             legend: { display: false },
@@ -46,20 +46,17 @@ const Chart = () => {
                 beginAtZero: true,
                 ticks: {
                     display: false,
-                    stepSize: 1000,
                 },
                 grid: {
                     display: true,
-                    borderDash: [5, 6],
-                    color: '#e0e0e0',
-                    lineWidth: 0.8,
+                    borderDash: [5, 5],
                 },
-                max: 5000,
             },
         },
     };
     
     return (
+        
         <div className="chart-container">
             <div className="chart-header">
                 <span className="chart-title">Booking</span>
